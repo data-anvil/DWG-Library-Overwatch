@@ -36,7 +36,7 @@ for f in glob.glob(file + "/**/AR/" + "*" + "progress 1.dwg", recursive=True):
 
 # Gives a basic count of how many dwg files have 'progress 1' in their filename & returns their folder locations
 print('There are ' + str(count1) + ' .dwg files ready to start')
-print(list1)
+print(*list1, sep='\n')
 print("")
 
 
@@ -50,7 +50,7 @@ for f in glob.glob(file + "/**/AR/" + "*" + "progress 2.dwg", recursive=True):
 
 # Gives a basic count of how many dwg files have 'progress 2' in their filename & returns their folder locations
 print('There are ' + str(count2) + ' .dwg files in progress')
-print(list2)
+print(*list2, sep='\n')
 print("")
 
 
@@ -64,5 +64,5 @@ for f in glob.glob(file + "/**/AR/" + "*" + "progress 3.dwg", recursive=True):
 
 # Gives a basic count of how many dwg files have 'progress 3' in their filename & returns their folder locations
 print('There are ' + str(count3) + ' .dwg files ready for review')
-print(list3)
+print(*list3, sep='\n')
 print("")
